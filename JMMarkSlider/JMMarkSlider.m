@@ -71,7 +71,7 @@
     [selectedSide drawAtPoint:CGPointMake(0,0)];
     for (int i = 0; i < [self.markPositions count]; i++) {
         CGContextSetLineWidth(context, self.markWidth);
-        float position = [self.markPositions[i]floatValue] * innerRect.size.width / 100.0;
+        float position = (i + 1) * innerRect.size.width / self.markPositions.count;
         CGContextMoveToPoint(context, position, CGRectGetHeight(innerRect)/2 - 5);
         CGContextAddLineToPoint(context, position, CGRectGetHeight(innerRect)/2 + 5);
         CGContextSetStrokeColorWithColor(context, [self.markColor CGColor]);
@@ -83,7 +83,7 @@
     [unselectedSide drawAtPoint:CGPointMake(0,0)];
     for (int i = 0; i < [self.markPositions count]; i++) {
         CGContextSetLineWidth(context, self.markWidth);
-        float position = [self.markPositions[i]floatValue] * innerRect.size.width / 100.0;
+        float position = (i + 1) * innerRect.size.width / self.markPositions.count;
         CGContextMoveToPoint(context, position, CGRectGetHeight(innerRect)/2 - 5);
         CGContextAddLineToPoint(context, position, CGRectGetHeight(innerRect)/2 + 5);
         CGContextSetStrokeColorWithColor(context, [self.markColor CGColor]);
