@@ -26,7 +26,7 @@ It is really easy to set it! Firstly, import the .h :
 
 	#import "JMMarkSlider.h"
 
-#### First way:
+#### First way (100% programmatically):
 
 Declare it as a property if you want to access to it properly:
 
