@@ -14,7 +14,7 @@ How to Install it
 platform :ios, '7.0'
 pod "JMMarkSlider", "~> 1.0"
 ```
-#### Classic and ancient way
+#### Classic way
 Copy into your project the following files:
 `JMMarkSlider.h`
 `JMMarkSlider.m`
